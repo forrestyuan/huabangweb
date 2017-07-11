@@ -1,0 +1,90 @@
+/*forall*/
+*{margin: 0;padding:0;}
+html,body{width:100%;height:100%;}
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6,p { font-family: Microsoft YaHei, Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
+::-webkit-scrollbar{ width:0;}
+a{text-decoration: none;}
+a:link,a:visited{color:white;}
+/*------head------*/
+#login,#more,#register{cursor: pointer;color:white;}
+#login{border: 1px solid #FFFFFF;padding:1px 4px 1px 4px;}
+#register{background-color: coral;padding:1px 4px 1px 4px;}
+.active{border-bottom: solid 2px coral; border-radius:10%;}	
+header{position:relative;width: 100%;}
+.headerbg{position: absolute;width:100%;height:100%;opacity:1;}
+.nav-bar{width:100%;height:50px;position: fixed;z-index: 50000;border-bottom: solid 1px #fff;}
+.search-bt{color:#FFFFFF;width:90px;height: 36px;font-size: 16px; background:rgba(0,0,0,0.2);float:right;}
+.search-tx{height:36px;font-size:16px;float:left;color: #FFFFFF;background:rgba(0,0,0,0.2);border: solid 1px #FFFFFF;}
+header span{display: inline-block;}
+.nav-bar .ul-left li,.nav-bar .ul-right li{display: inline-block;list-style: none;}
+.ul-left{float: left;margin-top: 5px;}	
+.ul-right{float:right;margin-top: 5px;}
+.logo{float: left;margin-left: 10px;}
+#moive{width: 40%;position:absolute;}
+#moive video{padding: 0;margin: 0;position: absolute;top:15px;left:58px;}
+#moive{display:none;}
+.play{position:absolute;top:250px;left:150px;color:#CCCCCC;}
+/*-----section------*/
+/*sectop*/
+section{border-top: solid 1px #ccc;border-bottom:solid 1px #ccc;position: relative;height:auto;}
+.sec-top{clear: both;padding:2;margin-bottom: 10;width:100%;margin:0;height:auto;border-bottom: solid 1px #ccc;}
+.img1,.img2,.img3,.img4,.img5,.img6,.img7{margin:8px 8px;display:inline-block;width:164px;height:71px;}
+.img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover,.img6:hover,.img7:hover{border-bottom: solid 2px red;opacity:0.8;}
+.totop{position:absolute:_top:expression(documentElement.scrollTop + 0 + "px");position: fixed;right: 10px;bottom:140px;z-index: 1000;display: none;}
+.totop img{width: 50px;height: 70px;}
+/*seccontent*/
+.wrap{position:relative;width:99.8%;height:auto;overflow: hidden;margin-bottom:10px;}
+
+
+.content{display:inline-block;width:308px;margin:1px;height: 308px;background-color: aquamarine;}
+.content:hover{opacity:0.8;}
+/*-----footer------*/
+footer{cursor:pointer;position:relative;bottom:-200px;background-color: #000;height:311px;width: 100%;color: #FFFFFF;font:14px,bolder;clear: both;}
+.ft-info li,.ft-info2 li{margin-bottom:10px;}
+.title{font-size: 18px;}
+.weixin{width:30px;height: 30px;}
+.weixin:hover{transition: ease-in-out 2s;transform:scale(5,5);}
+/*footerend*/
+.overlay{font-size:20px;background: rgba(190,190,190,1.0);text-align:center;position:relative;height:40px;width:400px;margin: 0 auto;top: -100px;}
+.overlay:hover{opacity:0.8;}
+/*mediaQuery*/
+@media only screen and (min-width:970px) {
+	 header{height:550px;}
+	 #moive{top:330px;margin-left: 80px;}
+	 .headerbg img{width:100%;height:550px;}
+	 .ul-left li,.ul-right li{margin:0 20px 20px 10px;font-size: 18px;}
+	 .search-center{display:inline-block;width:511px;margin:5px 0 0 0;}
+	 .search-center form{display:inline-block;width:511px;}
+	 .search-tx{width:416px;}
+	 
+	section{margin-top:60px;}
+	/*ft*/
+	.ft-info{width:70%;height:196px;float: left; }
+	.ft-info ul,li{display: block;}
+	.ft-info ul{float: left;margin:20px 20px 0px 10px;}
+	.ft-info2{width:29%;height: 196px;float: right; border-left: solid 1px #fff;}
+	.ft-info2 ul{float:right;margin:20px 0px 0px 30px;width: 250px;}
+	.ft-info2 ul,li{display:block;margin-right:20px;}
+}
+@media only screen and (max-width:970px){
+	 header{height:450px;}
+	 #moive{top:210px;margin-left: 40px;}
+	.headerbg img{width:100%;height:450px;}
+	.ul-left li,.ul-right li{margin:0 1px 1px 0px;font-size: 18px;}
+	.search-center{display:inline-block;width:325px;margin:0;}
+	.search-center form{display:inline-block;width:325px;margin: 5px 0 0 0;}
+	.search-tx{width:230px;}
+
+	section{margin-top:50px;}
+	/*ft*/
+	.ft-info{width:70%;height:196px;float: left;}
+	.ft-info ul,li{display: block;margin:20px 10px 20px 0px;}
+	.ft-info ul{float: left;}
+	.ft-info2{width:30%;height: 196px;float: right;}
+	.ft-info2 ul,li{display:block;margin:5px 0px 0px 5px;}
+	.ft-info2 ul{float: right;border-left: solid 1px #fff;}
+}
+
+@media only screen and (max-width:750px){
+	#navtop,header,section,.sec-top,.wrap,footer{width:750px;}
+}
